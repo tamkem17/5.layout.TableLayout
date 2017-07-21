@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.tam.a5layouttablelayout.MainActivity">
+    <TableRow>
+        <Button
+            android:text="Color 1"
+            android:textColor="@color/colorYellow"
+            android:id="@+id/btn_color1"/>
+        <Button
+            android:text="Color 2"
+            android:textColor="@color/colorRed"
+            android:id="@+id/btn_color2"/>
+        <Button
+            android:text="Color 3"
+            android:textColor="@color/colorBlue"
+            android:layout_weight="4"
+            android:id="@+id/btn_color3"
+            />
+    </TableRow>
+    <TableRow>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_weight="1"
+            android:background="@color/colorYellow"
+            android:id="@+id/txt"/>
+    </TableRow>
+    <TableRow>
+        <Button
+            android:text="Clear"
+            android:layout_column="2"
+            android:layout_weight="1"
+            android:id="@+id/btn_clear"/>
+    </TableRow>
+
+</TableLayout>
